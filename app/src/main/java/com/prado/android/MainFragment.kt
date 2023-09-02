@@ -1,0 +1,30 @@
+package com.prado.android
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.prado.android.databinding.FragmentMainBinding
+import com.prado.android.util.navTo
+
+/** Main Menu Study Guide */
+class MainFragment : Fragment(R.layout.fragment_main) {
+
+    private lateinit var binding: FragmentMainBinding
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // +-------------------------------------------------------------------------------------+
+        // | Orientação do app: Portrait(em pé) or Landscape(deitado) or Unspecified (os dois)   |
+        // +-------------------------------------------------------------------------------------+
+        // if you not define it in the manifest, you could also do it that way programmatically
+        //requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
+        binding = FragmentMainBinding.bind(view)
+      //  binding.codelabToastSnake.setOnClickListener { navTo(R.id.toastSnakeFragment) }
+        binding.codelabNotification.setOnClickListener { navTo(R.id.notificationFragment) }
+
+    }
+}
