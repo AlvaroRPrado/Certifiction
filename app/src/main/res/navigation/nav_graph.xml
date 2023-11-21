@@ -16,7 +16,14 @@
         <action
             android:id="@+id/action_mainFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_materialComponentsFragment"
+            app:destination="@id/materialComponentsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_selectImageFragment"
+            app:destination="@id/selectImageFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/toastSnakeFragment"
         android:name="com.prado.android.codelab.toast.ToastSnakeFragment"
@@ -26,6 +33,7 @@
             android:id="@+id/action_toastSnakeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.prado.android.codelab.notifiction.NotificationFragment"
@@ -35,4 +43,34 @@
             android:id="@+id/action_notificationFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/materialComponentsFragment"
+        android:name="com.prado.android.codelab.userinterface.materialcomponents.MaterialComponentsFragment"
+        android:label="fragment_material_components"
+        tools:layout="@layout/fragment_material_components" >
+        <action
+            android:id="@+id/action_materialComponentsFragment_to_productGridFragment"
+            app:destination="@id/productGridFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productGridFragment"
+        android:name="com.prado.android.codelab.userinterface.materialcomponents.ProductGridFragment"
+        android:label="fragment_product_grid"
+        tools:layout="@layout/fragment_product_grid" />
+    <fragment
+        android:id="@+id/selectImageFragment"
+        android:name="com.prado.android.codelab.core.workmanager.SelectImageFragment"
+        android:label="fragment_select_image"
+        tools:layout="@layout/fragment_select_image" >
+        <action
+            android:id="@+id/action_selectImageFragment_to_blurFragment"
+            app:destination="@id/blurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blurFragment"
+        android:name="com.prado.android.codelab.core.workmanager.BlurFragment"
+        android:label="fragment_blur"
+        tools:layout="@layout/fragment_blur" />
 </navigation>

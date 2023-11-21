@@ -1,4 +1,3 @@
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" Android="false">Study Guide: Programador de Alvaro Rodrigues <xliff:g id="star">\u2605</xliff:g></string>
     <string name="channel_name">notification_channel_simple_msg</string>
@@ -126,5 +125,6 @@
     <string name="attachment_summary_on" translatable="false">Baixar automaticamente Anexos de Emails</string>
     <string name="attachment_summary_off" translatable="false">Apenas baixar Anexos quando solicitados manualmente</string>
     <string name="computationError" translatable="false">Impossível Resolver Esse Calculo!</string>
+    <string name="ok">velue_ok\n</string>
 
 </resources>
