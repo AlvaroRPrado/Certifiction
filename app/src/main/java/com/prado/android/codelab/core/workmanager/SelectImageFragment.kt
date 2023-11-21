@@ -13,7 +13,7 @@ import com.prado.android.R
 import com.prado.android.databinding.FragmentSelectImageBinding
 import com.prado.android.util.navTo
 
-
+//Problema com o atualização no git
 class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
 
     companion object{

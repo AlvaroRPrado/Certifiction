@@ -11,7 +11,7 @@ import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-
+//Problema com o atualização no git
 /**
  * Saves the image to a permanent file
  */

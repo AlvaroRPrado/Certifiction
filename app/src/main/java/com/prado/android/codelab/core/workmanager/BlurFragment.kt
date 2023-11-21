@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import com.prado.android.R
 import com.prado.android.databinding.FragmentBlurBinding
 
-
+//Problema com o atualização no git
 class BlurFragment : Fragment(R.layout.fragment_blur) {
 
     private lateinit var viewModel: BlurViewModel

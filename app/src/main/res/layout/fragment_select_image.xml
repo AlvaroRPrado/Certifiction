@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".codelab.core.workmanager.SelectImageFragment"
     tools:layout_editor_absoluteY="81dp">
-
+<!--Problema com o atualização no git-->
     <Button
         android:id="@+id/selectImage"
         android:layout_width="wrap_content"
