@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_mainFragment_to_selectImageFragment"
             app:destination="@id/selectImageFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_interactiveUiFragment"
+            app:destination="@id/interactiveUiFragment" />
     </fragment>
 
     <fragment
@@ -73,4 +76,9 @@
         android:name="com.prado.android.codelab.core.workmanager.BlurFragment"
         android:label="fragment_blur"
         tools:layout="@layout/fragment_blur" />
+    <fragment
+        android:id="@+id/interactiveUiFragment"
+        android:name="com.prado.android.codelab.userinterface.interactiveui.InteractiveUiFragment"
+        android:label="fragment_interactive_ui"
+        tools:layout="@layout/fragment_interactive_ui" />
 </navigation>
