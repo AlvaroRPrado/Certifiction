@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_mainFragment_to_sendFragment"
             app:destination="@id/sendFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
     </fragment>
 
 
@@ -122,5 +125,14 @@
             app:launchSingleTop="true"
             app:popUpTo="@id/sendFragment"
             app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.prado.android.codelab.userinterface.recyclerview.RecyclerViewFragment"
+        android:label="RecyclerViewFragment" >
+        <action
+            android:id="@+id/action_recyclerViewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
