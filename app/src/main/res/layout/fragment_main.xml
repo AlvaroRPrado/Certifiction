@@ -93,6 +93,18 @@
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
+        <Button
+            android:id="@+id/codelab_activities_intents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="Activities and intents"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
 
     </LinearLayout>
 

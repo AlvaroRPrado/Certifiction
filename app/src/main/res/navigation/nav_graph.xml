@@ -10,6 +10,7 @@
         android:name="com.prado.android.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
+
         <action
             android:id="@+id/action_mainFragment_to_toastSnakeFragment"
             app:destination="@id/toastSnakeFragment" />
@@ -25,7 +26,12 @@
         <action
             android:id="@+id/action_mainFragment_to_interactiveUiFragment"
             app:destination="@id/interactiveUiFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sendFragment"
+            app:destination="@id/sendFragment" />
     </fragment>
+
+
 
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -62,6 +68,7 @@
         android:name="com.prado.android.codelab.userinterface.materialcomponents.ProductGridFragment"
         android:label="fragment_product_grid"
         tools:layout="@layout/fragment_product_grid" />
+
     <fragment
         android:id="@+id/selectImageFragment"
         android:name="com.prado.android.codelab.core.workmanager.SelectImageFragment"
@@ -71,14 +78,49 @@
             android:id="@+id/action_selectImageFragment_to_blurFragment"
             app:destination="@id/blurFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/blurFragment"
         android:name="com.prado.android.codelab.core.workmanager.BlurFragment"
         android:label="fragment_blur"
         tools:layout="@layout/fragment_blur" />
+
     <fragment
         android:id="@+id/interactiveUiFragment"
         android:name="com.prado.android.codelab.userinterface.interactiveui.InteractiveUiFragment"
         android:label="fragment_interactive_ui"
         tools:layout="@layout/fragment_interactive_ui" />
+
+
+
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.prado.android.codelab.userinterface.activityintents.SendFragment"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send" >
+
+        <action
+            android:id="@+id/action_sendFragment_to_replyFragment"
+            app:destination="@id/replyFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_sendFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.prado.android.codelab.userinterface.activityintents.ReplyFragment"
+        android:label="fragment_reply"
+        tools:layout="@layout/fragment_reply" >
+
+        <action
+            android:id="@+id/action_replyFragment_to_sendFragment"
+            app:destination="@id/sendFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/sendFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
