@@ -30,6 +30,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
         binding.codelabRecyclerview.setOnClickListener{ navTo(R.id.recyclerViewFragment) }
+        binding.codelabRecyclerviewWithPaging.setOnClickListener { navTo(R.id.recyclerViewPagingFragment) }
 
     }
 }
