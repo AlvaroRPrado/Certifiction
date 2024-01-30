@@ -33,6 +33,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabRecyclerviewWithPaging.setOnClickListener { navTo(R.id.recyclerViewPagingFragment) }
         binding.codelabAccessibility.setOnClickListener { navTo(R.id.accessibilityFragment) }
         binding.codelabUserNavigation.setOnClickListener { navTo(R.id.tabHostFragment) }
+        binding.codelabCreateCustomView.setOnClickListener { navTo(R.id.customViewFragment) }
+
         binding.codelabUserNavigationDrawer.setOnClickListener {R.id.drawerFragment  }
         binding.codelabUserNavigationTab.setOnClickListener {  }
 

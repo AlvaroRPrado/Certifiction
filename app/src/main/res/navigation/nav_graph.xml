@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_mainFragment_to_drawerFragment"
             app:destination="@id/drawerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customViewFragment"
+            app:destination="@id/customViewFragment" />
     </fragment>
 
 
@@ -203,4 +206,9 @@
         android:name="com.prado.android.codelab.userinterface.usernavigation.tab.TabThreeFragment"
         android:label="fragment_tab_three"
         tools:layout="@layout/fragment_tab_three" />
+    <fragment
+        android:id="@+id/customViewFragment"
+        android:name="com.prado.android.codelab.userinterface.customview.CustomViewFragment"
+        android:label="fragment_custom_view"
+        tools:layout="@layout/fragment_custom_view" />
 </navigation>

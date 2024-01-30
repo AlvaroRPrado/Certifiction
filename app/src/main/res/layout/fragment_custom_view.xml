@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.prado.android.codelab.userinterface.customview.PasswordItem
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            custom:passwordCounterEnabled="true"
+            custom:passwordCounterMaxLength="32"
+            custom:passwordCounterMinLength="4"
+            custom:passwordErrorText="Texto de Erro"
+            custom:passwordForgottenButtonEnabled="true"
+            custom:passwordForgottenButtonText="Esqueceu?"
+            custom:passwordHintText="Password"
+            custom:passwordSuccessText="Helper Text!"
+            custom:passwordSuccessTextEnabled="false"/>
+
+        <com.prado.android.codelab.userinterface.customview.PasswordItemOutlined
+            android:id="@+id/pwdOutlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            custom:passwordCounterEnabled="true"
+            custom:passwordCounterMaxLength="32"
+            custom:passwordCounterMinLength="4"
+            custom:passwordErrorText="Texto de Erro"
+            custom:passwordForgottenButtonEnabled="true"
+            custom:passwordForgottenButtonText="Esqueceu?"
+            custom:passwordHintText="Password"
+            custom:passwordSuccessText="Helper Text!"
+            custom:passwordSuccessTextEnabled="true" />
+    </LinearLayout>
+
+</ScrollView>
