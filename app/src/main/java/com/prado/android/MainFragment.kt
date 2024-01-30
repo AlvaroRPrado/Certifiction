@@ -34,8 +34,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabAccessibility.setOnClickListener { navTo(R.id.accessibilityFragment) }
         binding.codelabUserNavigation.setOnClickListener { navTo(R.id.tabHostFragment) }
         binding.codelabCreateCustomView.setOnClickListener { navTo(R.id.customViewFragment) }
-
-        binding.codelabUserNavigationDrawer.setOnClickListener {R.id.drawerFragment  }
+        binding.codelabUserNavigationDrawer.setOnClickListener {navTo(R.id.drawerFragment) }
         binding.codelabUserNavigationTab.setOnClickListener {  }
 
     }

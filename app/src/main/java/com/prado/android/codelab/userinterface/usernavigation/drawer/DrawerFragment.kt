@@ -8,6 +8,7 @@ import com.prado.android.databinding.FragmentDrawerBinding
 
 class DrawerFragment : Fragment(R.layout.fragment_drawer) {
 
+    //implementar o navigation drawer
     private lateinit var binding: FragmentDrawerBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
