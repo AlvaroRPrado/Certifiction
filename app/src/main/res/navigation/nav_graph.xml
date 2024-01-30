@@ -38,6 +38,12 @@
         <action
             android:id="@+id/action_mainFragment_to_accessibilityFragment"
             app:destination="@id/accessibilityFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_tabHostFragment"
+            app:destination="@id/tabHostFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_drawerFragment"
+            app:destination="@id/drawerFragment" />
     </fragment>
 
 
@@ -159,4 +165,42 @@
             android:id="@+id/action_accessibilityFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/tabHostFragment"
+        android:name="com.prado.android.codelab.userinterface.usernavigation.tab.TabHostFragment"
+        android:label="fragment_tab_host"
+        tools:layout="@layout/fragment_tab_host" >
+        <action
+            android:id="@+id/action_tabHostFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawerFragment"
+        android:name="com.prado.android.codelab.userinterface.usernavigation.drawer.DrawerFragment"
+        android:label="fragment_drawer"
+        tools:layout="@layout/fragment_drawer" >
+        <action
+            android:id="@+id/action_drawerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.prado.android.codelab.userinterface.usernavigation.oldschool.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.prado.android.codelab.userinterface.usernavigation.oldschool.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/tabOneFragment"
+        android:name="com.prado.android.codelab.userinterface.usernavigation.tab.TabOneFragment"
+        android:label="fragment_tab_one"
+        tools:layout="@layout/fragment_tab_one" />
+    <fragment
+        android:id="@+id/tabThreeFragment"
+        android:name="com.prado.android.codelab.userinterface.usernavigation.tab.TabThreeFragment"
+        android:label="fragment_tab_three"
+        tools:layout="@layout/fragment_tab_three" />
 </navigation>

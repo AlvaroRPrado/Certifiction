@@ -141,6 +141,42 @@
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
+        <Button
+            android:id="@+id/codelab_user_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="User navigation"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_user_navigation_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="User navigation with tabs"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_user_navigation_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="User navigation with Drawer"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
 
 
     </LinearLayout>
