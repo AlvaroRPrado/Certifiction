@@ -47,6 +47,9 @@
         <action
             android:id="@+id/action_mainFragment_to_customViewFragment"
             app:destination="@id/customViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_themeFragment"
+            app:destination="@id/themeFragment" />
     </fragment>
 
 
@@ -211,4 +214,9 @@
         android:name="com.prado.android.codelab.userinterface.customview.CustomViewFragment"
         android:label="fragment_custom_view"
         tools:layout="@layout/fragment_custom_view" />
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.prado.android.codelab.userinterface.themes.ThemeFragment"
+        android:label="fragment_theme"
+        tools:layout="@layout/fragment_theme" />
 </navigation>

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Android" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Android" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -17,6 +17,49 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Definicao do estilo das bordas dos botoes de score - o outline que usa o primary color -->
+    <style name="ScoreButtons" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <!-- Definicao do estilo dos botoes que herda do ScoreButtons -->
+    <style name="PlusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_plus</item>
+        <item name=
+            "android:contentDescription">@string/plus_button_description</item>
+    </style>
+
+    <style name="MinusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_minus</item>
+        <item name=
+            "android:contentDescription">@string/minus_button_description</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+
+
+    <string name="plus_button_description" translatable="false">increase score plus one</string>
+    <string name="minus_button_description" translatable="false">decrease score minus one</string>
+
+
+    <!-- Button Styles -->
+    <style name="GoButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/ok_green_color</item>
+        <item name="colorControlHighlight">@color/selected_green_color</item>
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="colorAccent">@color/selected_green_color</item>
+    </style>
+
+    <style name="SkipButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="android:textColor">@color/grey_button_color</item>
+        <item name="colorControlHighlight">@color/skip_red_color</item>
+    </style>
 
 
     <!-- codelab custom view -->

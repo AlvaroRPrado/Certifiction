@@ -14,6 +14,8 @@
     <string name="go">Go</string>
     <string name="see_file">See File</string>
 
+
+
     <!-- Content descriptions -->
     <string name="description_image">The image to blur and save.</string>
 
