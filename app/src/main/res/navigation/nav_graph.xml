@@ -53,6 +53,9 @@
         <action
             android:id="@+id/action_mainFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
     </fragment>
 
 
@@ -240,4 +243,9 @@
             android:id="@+id/action_orderFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/batteryFragment"
+        android:name="com.prado.android.codelab.userinterface.themes.BatteryFragment"
+        android:label="fragment_battery"
+        tools:layout="@layout/fragment_battery" />
 </navigation>
