@@ -45,6 +45,19 @@
             android:text="Toast &amp; Snake"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_recyclerview_with_paging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="Recyclerview with Paging Library"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
         <Button
             android:id="@+id/codelab_notification"
             android:layout_width="match_parent"
@@ -114,18 +127,6 @@
             android:backgroundTint="@color/design_default_color_secondary"
             android:gravity="left|center_vertical"
             android:text="RecyclerView"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <Button
-            android:id="@+id/codelab_recyclerview_with_paging"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_secondary"
-            android:gravity="left|center_vertical"
-            android:text="Recyclerview with Paging Library"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -224,6 +225,31 @@
             android:text="Themes and touches (Level List)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_room_with_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:gravity="left|center_vertical"
+            android:text="Room with a View"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/codelab_room_livedata_viewmodel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:gravity="left|center_vertical"
+            android:text="Room, LiveData and ViewModel (Duplicated)"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
 
 
 

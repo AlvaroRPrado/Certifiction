@@ -56,6 +56,11 @@
         <action
             android:id="@+id/action_mainFragment_to_batteryFragment"
             app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+
+
     </fragment>
 
 
@@ -248,4 +253,22 @@
         android:name="com.prado.android.codelab.userinterface.themes.BatteryFragment"
         android:label="fragment_battery"
         tools:layout="@layout/fragment_battery" />
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.prado.android.codelab.datamanagement.roomwithview.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" >
+        <action
+            android:id="@+id/action_wordFragment_to_newWordFragment"
+            app:destination="@id/newWordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newWordFragment"
+        android:name="com.prado.android.codelab.datamanagement.roomwithview.NewWordFragment"
+        android:label="NewWordFragment" >
+        <action
+            android:id="@+id/action_newWordFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+
 </navigation>
