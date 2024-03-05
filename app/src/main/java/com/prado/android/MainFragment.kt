@@ -39,6 +39,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabMenuPickers.setOnClickListener { navTo(R.id.menuFragment) }
         binding.codelabThemesTouchesBaterry.setOnClickListener { navTo(R.id.batteryFragment) }
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
+        binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment) }
         binding.codelabUserNavigationTab.setOnClickListener {  }
     }
 }
