@@ -41,5 +41,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.codelabRoomWithView.setOnClickListener { navTo(R.id.wordFragment) }
         binding.codelabSharedPreferences.setOnClickListener { navTo(R.id.sharedPrefFragment) }
         binding.codelabUserNavigationTab.setOnClickListener {  }
+        binding.codelabViewmodelViewmodelfactory.setOnClickListener { navTo(R.id.titleFragment) }
     }
 }

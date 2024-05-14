@@ -62,6 +62,9 @@
         <action
             android:id="@+id/action_mainFragment_to_sharedPrefFragment"
             app:destination="@id/sharedPrefFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
 
 
     </fragment>
@@ -278,5 +281,61 @@
         android:name="com.prado.android.codelab.datamanagement.sharedprefs.SharedPrefFragment"
         android:label="fragment_shared_pref"
         tools:layout="@layout/fragment_shared_pref" />
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.prado.android.codelab.datamanagement.viewmodelfactory.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+
+        <action
+            android:id="@+id/action_title_to_game"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_title_destination_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.prado.android.codelab.datamanagement.viewmodelfactory.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+
+        <action
+            android:id="@+id/action_game_to_score"
+            app:destination="@id/scoreFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@+id/title_destination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.prado.android.codelab.datamanagement.viewmodelfactory.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" >
+        <action
+            android:id="@+id/action_restart"
+            app:destination="@+id/game_destination"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@+id/title_destination" />
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+
+    </fragment>
 
 </navigation>
