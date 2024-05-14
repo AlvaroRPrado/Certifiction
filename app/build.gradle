@@ -84,6 +84,7 @@ dependencies {
     // | Depuração deps                                                  |
     // +-----------------------------------------------------------------+
     implementation "com.jakewharton.timber:timber:4.7.1"
+    implementation 'androidx.preference:preference:1.2.1'
 
     // +-----------------------------------------------------------------+
     // | Navigation                                                      |

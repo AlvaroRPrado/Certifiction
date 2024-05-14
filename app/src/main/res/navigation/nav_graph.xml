@@ -65,6 +65,9 @@
         <action
             android:id="@+id/action_mainFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment" />
 
 
     </fragment>
@@ -337,5 +340,18 @@
 
 
     </fragment>
+    <fragment
+        android:id="@+id/appSettingsFragment"
+        android:name="com.prado.android.codelab.datamanagement.appsettings.AppSettingsFragment"
+        android:label="fragment_app_settings"
+        tools:layout="@layout/fragment_app_settings" >
+        <action
+            android:id="@+id/action_appSettingsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.prado.android.codelab.datamanagement.appsettings.SettingsFragment"
+        android:label="SettingsFragment" />
 
 </navigation>
