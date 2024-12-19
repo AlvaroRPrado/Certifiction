@@ -20,7 +20,7 @@ class BlurWorker(private val ctx: Context, params: WorkerParameters) : Worker(ct
             val pic = MediaStore.Images.Media.getBitmap(ctx.contentResolver, Uri.parse(resourceUri))
             val output = blurBitmap(pic, appContext)
             // Write bitmap to a temp file
-            val outputUri = writeBitmapToFile(appContext, output)
+            val outputUri = output?.let { writeBitmapToFile(appContext, it) }
             makeStatusNotification("Output is $outputUri", appContext)
             Result.success()
         } catch (throwable: Throwable) {

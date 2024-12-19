@@ -20,11 +20,13 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
         binding = FragmentMenuBinding.bind(view)
         setHasOptionsMenu(true)
     }
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_main, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
             R.id.action_order ->{

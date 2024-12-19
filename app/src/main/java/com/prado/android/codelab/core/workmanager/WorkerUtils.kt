@@ -83,13 +83,15 @@ fun sleep(){
 
 // metodo que aplica o blur
 @WorkerThread
-fun blurBitmap(bitmap: Bitmap, applicationContext: Context): Bitmap{
+fun blurBitmap(bitmap: Bitmap, applicationContext: Context): Bitmap? {
     lateinit var rsContext: RenderScript
     try {
         // Create the output bitmap
-        val output = Bitmap.createBitmap(
-            bitmap.width, bitmap.height, bitmap.config
-        )
+        val output = bitmap.config?.let {
+            Bitmap.createBitmap(
+                bitmap.width, bitmap.height, it
+            )
+        }
         // Blur the image
         rsContext = RenderScript.create(applicationContext, RenderScript.ContextType.DEBUG)
         val inAlloc = Allocation.createFromBitmap(rsContext, bitmap)
